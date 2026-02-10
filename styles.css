@@ -1,0 +1,201 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: aliceblue;
+}
+
+/* HEADER */
+#header-box {
+    background-color: #051366;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.title-header {
+    font-size: 20px;
+}
+
+/* MAIN */
+#main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TÍTULOS */
+.titulo-principal {
+    margin: 20px;
+    font-size: 28px;
+}
+
+.titulo-secao {
+    margin: 20px;
+    font-size: 24px;
+}
+
+/* SOBRE */
+#article-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #051366;
+    width: 95%;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.img-profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* HABILIDADES */
+#section-habilidade {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 95%;
+    margin-bottom: 30px;
+}
+
+.icone-habilidade {
+    background-color: #051366;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: 300ms;
+}
+
+.icone-habilidade:hover {
+    background-color: #5d75ff;
+    transform: scale(1.1);
+}
+
+/* PROJETOS */
+#section-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 95%;
+}
+
+.card-project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 320px;
+    height: 450px;
+    padding: 15px;
+    background-color: #051366;
+    border-radius: 10px;
+    transition: transform 300ms, box-shadow 300ms;
+}
+
+.card-project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.titulo-projeto {
+    font-size: 20px;
+}
+
+.descricao-projeto {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* IMAGEM PROJETO */
+.img-project {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* BOTÃO */
+.botao-ver-mais {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #5d75ff;
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 300ms, background-color 300ms;
+}
+
+.botao-ver-mais:hover {
+    background-color: #7489ff;
+    transform: scale(1.08);
+}
+
+/* FOOTER */
+#footer-box {
+    height: 200px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+
+    .titulo-principal {
+        font-size: 22px;
+    }
+
+    .titulo-secao {
+        font-size: 20px;
+    }
+
+    #article-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    .icone-habilidade {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .card-project {
+        width: 150px;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .img-project {
+        max-width: 140px;
+    }
+
+    .descricao-projeto {
+        font-size: 12px;
+    }
+}
