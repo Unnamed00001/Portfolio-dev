@@ -1,113 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Roger</title>
+    <meta name="description" content="Portfólio de Roger Oliveira - Desenvolvedor Full Stack em formação">
+    <title>Roger Oliveira | Desenvolvedor Full Stack</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <header id="header-box">
-        <h2 class="title-header">Roger</h2>
+    <header class="header">
+        <div class="container">
+            <h2 class="logo">Roger Oliveira</h2>
+        </div>
     </header>
 
-    <main id="main-box">
+   <main>
 
-        <h1 class="titulo-principal">Portfólio - Roger</h1>
+   
+    <section class="section hero">
+        <div class="container">
+            <h1>Roger Oliveira</h1>
+            <p>Desenvolvedor Full Stack em formação</p>
+        </div>
+    </section>
 
-        <article id="article-box">
-            <img class="img-profile" src="assets/profileTeste.jpg" alt="Foto de perfil do Roger" />
+  
+    <section class="section section-dark">
+        <div class="container sobre">
+            <img src="assets/profileTeste.jpg" alt="Foto de Roger" class="img-profile">
 
-            <section class="box">
-                <h2>Sobre Mim</h2>
+            <div>
+                <h2 class="section-title">Sobre Mim</h2>
                 <p>
-                    Sou estudante de Engenharia de Software, com foco no desenvolvimento
-                    de aplicações web e mobile, utilizando tecnologias modernas e projetos práticos.
+                    Estudante de Engenharia de Software com foco no desenvolvimento
+                    de aplicações web e mobile. Experiência prática com React,
+                    Node.js e TypeScript.
                 </p>
-            </section>
-        </article>
+                <p>
+                    Busco evoluir constantemente em arquitetura, APIs REST,
+                    boas práticas e performance.
+                </p>
+            </div>
+        </div>
+    </section>
 
-        <h2 class="titulo-secao">Habilidades</h2>
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
 
-        <section id="section-habilidade">
-            <span class="icone-habilidade">HTML</span>
-            <span class="icone-habilidade">CSS</span>
-            <span class="icone-habilidade">JavaScript</span>
-            <span class="icone-habilidade">Node.js</span>
-            <span class="icone-habilidade">React</span>
-            <span class="icone-habilidade">TypeScript</span>
-            <span class="icone-habilidade">Git</span>
-            <span class="icone-habilidade">GitHub</span>
-            <span class="icone-habilidade">Expo</span>
-            <span class="icone-habilidade">Express</span>
-            <span class="icone-habilidade">NPM</span>
-        </section>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Front-end</h3>
+                    <p>HTML • CSS • JavaScript • React • TypeScript</p>
+                </div>
 
-        <h2 class="titulo-secao">Projetos</h2>
+                <div class="skill-box">
+                    <h3>Back-end</h3>
+                    <p>Node.js • Express • APIs REST</p>
+                </div>
 
-        <section id="section-project">
+                <div class="skill-box">
+                    <h3>Mobile</h3>
+                    <p>React Native • Expo</p>
+                </div>
 
-            <article class="card-project">
-                <h3 class="titulo-projeto">Projeto</h3>
-                <img class="img-project" src="assets/profileTeste.jpg" alt="Imagem do projeto" />
-                <p class="descricao-projeto">Descrição do projeto</p>
-                <a href="#" class="botao-ver-mais">Ver mais</a>
-            </article>
+                <div class="skill-box">
+                    <h3>Ferramentas</h3>
+                    <p>Git • GitHub • NPM</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <article class="card-project">
-                <h3 class="titulo-projeto">Projeto</h3>
-                <img class="img-project" src="assets/profileTeste.jpg" alt="Imagem do projeto" />
-                <p class="descricao-projeto">Descrição do projeto</p>
-                <a href="#" class="botao-ver-mais">Ver mais</a>
-            </article>
+   
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
 
-            <article class="card-project">
-                <h3 class="titulo-projeto">Projeto</h3>
-                <img class="img-project" src="assets/profileTeste.jpg" alt="Imagem do projeto" />
-                <p class="descricao-projeto">Descrição do projeto</p>
-                <a href="#" class="botao-ver-mais">Ver mais</a>
-            </article>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>Portfólio Profissional</h3>
+                    <p>Site responsivo desenvolvido com HTML, CSS e JavaScript.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
 
-            <article class="card-project">
-                <h3 class="titulo-projeto">Projeto</h3>
-                <img class="img-project" src="assets/profileTeste.jpg" alt="Imagem do projeto" />
-                <p class="descricao-projeto">Descrição do projeto</p>
-                <a href="#" class="botao-ver-mais">Ver mais</a>
-            </article>
+                <div class="card">
+                    <h3>API com Node.js</h3>
+                    <p>API REST com autenticação e rotas protegidas.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
 
-        </section>
+                <div class="card">
+                    <h3>App Mobile</h3>
+                    <p>Aplicativo de tarefas desenvolvido com Expo.</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="section-contato">
+   
+    <section class="section">
+        <div class="container contato">
+            <h2 class="section-title">Contato</h2>
+            <p>Aberto a oportunidades e colaborações.</p>
 
-            <h2 class="titulo-secao">Contato</h2>
+            <div class="redes">
 
-            <section class="section-contato-box">
-                <a href="https://www.linkedin.com/in/roger-oliveira-9a8ab8191/" target="_blank">
-                    <img class="img-contato" src="assets/linkedin.png" alt="linkedin" />
+                <a href="https://www.linkedin.com/in/roger-oliveira-9a8ab8191/"> 
+                    <img class="img-redes" src="assets/linkedin.png" alt="linkedin"/>
                 </a>
 
-                <a href="mailto:oliveiraroger624@gmail.com">
-                    <img class="img-contato" src="assets/gmail.png" alt="Enviar email para Roger" />
+                <a href=""> 
+                    <img class="img-redes" src="assets/github.png" alt="GitHub"/>
                 </a>
 
-                <a href="https://github.com/Unnamed00001" target="_blank">
-                    <img class="img-contato" src="assets/github.png" alt="GitHub" />
+                <a href="mailto:oliveiraroger624@gmail.com"> 
+                    <img class="img-redes" src="assets/gmail.png" alt="Gmail"/>
                 </a>
 
-            </section>
+            </div>
+        </div>
+    </section>
 
-        </section>
+</main>
 
-    </main>
-
-    <footer id="footer-box">
-        <p>© 2026 Roger - Todos os direitos reservados</p>
-        <p>Desenvolvido por Roger | Engenharia de Software</p>
+    <footer class="footer">
+        <p>© 2026 Roger Oliveira - Todos os direitos reservados</p>
+        <p>Engenharia de Software | Desenvolvedor Full Stack</p>
     </footer>
 
 </body>
-
 </html>
