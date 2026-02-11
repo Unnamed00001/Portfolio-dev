@@ -224,13 +224,14 @@ body {
     }
 
     .card-project {
-        width: 150px;
-        height: 300px;
-        padding: 10px;
+        width: 90%;
+        height: auto;
     }
 
     .img-project {
-        max-width: 140px;
+        width: 100%;
+        height: 140px;       
+        object-fit: cover;   
     }
 
     .descricao-projeto {
