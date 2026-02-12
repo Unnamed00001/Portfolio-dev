@@ -70,6 +70,39 @@ body {
     margin-top: 15px;
     color: var(--texto-secundario);
 }
+.btn {
+    display: inline-block;
+    background-color: var(--azul-principal);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1e40af; /* azul mais escuro */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 2px solid var(--azul-principal);
+    color: var(--azul-principal);
+    padding: 12px 24px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--azul-principal);
+    color: #fff;
+}
 
 
 .sobre {
