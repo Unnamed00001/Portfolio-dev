@@ -136,6 +136,32 @@ body {
     transform: translateY(-5px);
 }
 
+.tech-experience {
+    background-color: var(--fundo-principal);
+    list-style: none;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.tech-experience li {
+    background-color: var(--fundo-secundario);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+    border: 2px solid transparent;
+    transition: 0.3s;
+}
+.tech-experience li::before {
+    content: "✔";
+    margin-right: 10px;
+    color: var(--azul-principal);
+}
+.tech-experience li:hover {
+    border-color: var(--azul-principal);
+    transform: translateY(-6px);
+}
 
 .projects-grid {
     display: grid;
@@ -144,7 +170,7 @@ body {
 }
 
 .card {
-    background: var(--fundo-principal);
+    background: var(--fundo-secundario);
     padding: 25px;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.05);
@@ -216,7 +242,7 @@ body {
     border-top: 2px solid #2563eb;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
     .sobre {
         flex-direction: column;
@@ -225,6 +251,11 @@ body {
 
     .hero h1 {
         font-size: 28px;
+    }
+
+    .tech-experience li {
+        font-size: 14px;
+        padding: 10px;
     }
 }
 
