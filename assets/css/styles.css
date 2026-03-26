@@ -50,6 +50,12 @@ html {
     color: var(--text);
 }
 
+.container-nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
 .nav ul{
     list-style: none;
     display: flex;
@@ -79,6 +85,19 @@ html {
 .nav ul li a:hover::after {
     width: 100%;
 }
+.btn-outline {
+    border: solid 0.2rem var(--azul);
+    padding: 1rem 3rem;
+    border-radius: 1.6rem;
+    color: var(--text);
+    font-size: 1.2rem;
+    text-shadow: 0 2px 4px rgb(0, 0, 0.25) ;
+    transition: all 300ms ease-in-out;
+}
+.btn-outline:hover {
+    background: #3b82f6;
+    transform: scale(1.05);
+}
 
 .btn {
     background-color: var(--azul);
@@ -97,8 +116,8 @@ html {
 }
 
 .spacing {
-    height: 2rem;
-    background-color: var(--bg);
+    height: 5rem;
+    
 }
 
 .section {
@@ -113,7 +132,7 @@ html {
 .container-hero {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 8rem 3rem;
 }
 
 .hero-content {
@@ -145,23 +164,29 @@ html {
 }
 .img-content{
     flex: 1;
-    display: flex;
-    gap: 6rem;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
     align-items: center;
 }
 
-.img-content img {
-    box-shadow: 0 20px 40px 10px #000;
+.hero-img1,
+.hero-img2 {
+    flex: 1;
 }
 
 .hero-img2 {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
+.img-content img {
+    box-shadow: 0 20px 40px 10px #000;
+}
+
 .hero-img1 img {
     height: 40rem;
     width: 25rem;
@@ -171,7 +196,7 @@ html {
 }
 
 .hero-img2 img:nth-child(1){
-    height: 35rem;
+    height: 30rem;
     width: 21rem;
     border-radius: 0.1rem;
 }
