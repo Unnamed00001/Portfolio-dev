@@ -31,7 +31,7 @@ html {
     right: 0;
     width: 100%;
     background-color: var(--bg);
-    border-bottom: solid 0.1rem var(--azul);
+    border-bottom: solid 0.1rem var(--text2);
     z-index: 1000;
 }
 
@@ -87,32 +87,36 @@ html {
 }
 .btn-outline {
     border: solid 0.2rem var(--azul);
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
     border-radius: 1.6rem;
     color: var(--text);
     font-size: 1.2rem;
-    text-shadow: 0 2px 4px rgb(0, 0, 0.25) ;
+    text-align: center;
+    text-shadow: 0 2px 4px rgb(0, 0, 0, 0.25) ;
     transition: all 300ms ease-in-out;
+}
+.btn:hover, .btn-outline:hover {
+    background-color: var(--azul);
+    filter: brightness(1.1);
 }
 .btn-outline:hover {
     background: #3b82f6;
-    transform: scale(1.05);
 }
 
 .btn {
     background-color: var(--azul);
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
     border-radius: 1.6rem;
     color: var(--text);
     font-size: 1.2rem;
-    text-shadow: 0 2px 4px rgb(0, 0, 0.25) ;
+    text-align: center;
     transition: all 300ms ease-in-out;
 
 }
 
 .btn:hover {
     background: #3b82f6;
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 .spacing {
@@ -151,11 +155,13 @@ html {
 }
 
 .hero-text h1 {
-    font-size: 4rem;
+    font-size: 5.5rem;
 }
 
 .hero-text p {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: var(--text2);
+    padding: 2rem 0;
 }
 
 .btn-content-hero {
